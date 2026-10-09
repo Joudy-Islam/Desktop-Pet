@@ -355,18 +355,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jysoa"]
-size = Vector2(20, 21)
+size = Vector2(22, 21)
 
 [node name="Node2D" type="Node2D" unique_id=1692671375]
 script = ExtResource("1_bpvl7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1485502821]
 sprite_frames = SubResource("SpriteFrames_mm03q")
-animation = &"jumping"
-frame_progress = 0.77021176
+animation = &"sitting"
+frame_progress = 0.11268165
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2013805316]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=834924131]
-position = Vector2(0, 1.5)
+position = Vector2(1, 1.5)
 shape = SubResource("RectangleShape2D_jysoa")
