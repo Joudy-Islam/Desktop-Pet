@@ -147,6 +147,10 @@ region = Rect2(0, 120, 24, 24)
 atlas = ExtResource("1_rm5kg")
 region = Rect2(24, 120, 24, 24)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_sg020"]
+atlas = ExtResource("1_rm5kg")
+region = Rect2(48, 96, 24, 24)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_r6ckq"]
 atlas = ExtResource("1_rm5kg")
 region = Rect2(0, 24, 24, 24)
@@ -326,6 +330,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_sg020")
+}],
+"loop": 1,
+"name": &"smile",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_r6ckq")
 }, {
 "duration": 1.0,
@@ -361,9 +373,9 @@ size = Vector2(22, 21)
 script = ExtResource("1_bpvl7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1485502821]
+scale = Vector2(10, 10)
 sprite_frames = SubResource("SpriteFrames_mm03q")
-animation = &"sitting"
-frame_progress = 0.11268165
+animation = &"smile"
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2013805316]
 
